@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    background: black;
+    color:lightgray;
+    font-size: 35px;
+    text-align: center;
+   
+
+}
+
+.wrapp{
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    padding:100px; 
+    
+}
+#main{
+    width:750px;
+    height:600px;
+    margin: 0 auto;
+    border:1px solid #7a7878;
+    margin-left:0px ;
+}
+.mon{
+    display: flex;
+    margin: 0 auto;
+    width:350px;
+    height:600px;
+    border:1px solid #7a7878;
+    margin-right:0px;
+    flex-wrap:wrap;
+}
+.row, .row1{
+    display: flex;
+    justify-content: center;
+    border:1px solid #7a7878;
+}
+.cell, .cell1, .today{ 
+    padding-top: 20px;
+    width: 14%;
+    height:76px;
+    display:flex;
+    justify-content: center;
+    border:1px solid #7a7878;
+    transition: all 1.5s ease;
+   
+}
+.today, .cell:hover{
+    background-color:rgba(44, 43, 43, 0.74) ;
+   /*  background:radial-gradient(circle,rgb(90, 88, 88), black 80% ); */
+}
+
+.cell:nth-of-type(7n) {
+	color:red;
+}
+.arrow{
+    color: rgba(173, 170, 170, 0.74);
+    width:50%;
+    height: 150px;
+    font-size:130px;
+    font-weight:bolder;
+    transition: all 1.5s ease;
+}
+.arrow:hover{
+    background-color:rgba(44, 43, 43, 0.74) ;
+    cursor: pointer;
+}
+.show{
+    display: block;
+    width: 100%;
+   
+}
+.yea{
+    font-size:  30px ;
+}
+.showDay{
+    font-size: 100px;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    color: rgba(238, 238, 238, 0.966);
+    background: rgba(119, 118, 117, 0.6);
+}
+
+::selection {
+    color: rgba(238, 238, 238, 0.966);
+    background: rgba(119, 118, 117, 0.6);
+}
+
